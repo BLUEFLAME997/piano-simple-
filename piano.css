@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-family: monospace;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(155, 245, 245);
+}
+main .container {
+  width: 80%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+}
+main .container .second-container {
+  width: 100%;
+  height: 55%;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 20px;
+}
+main .container .second-container #box36 {
+  right: -180px;
+}
+main .container .second-container #box35 {
+  right: -185px;
+}
+main .container .second-container #box34 {
+  right: -190px;
+}
+main .container .second-container #box33 {
+  right: -152px;
+}
+main .container .second-container #box32 {
+  right: -157px;
+}
+main .container .second-container #box31 {
+  right: -115px;
+}
+main .container .second-container #box30 {
+  right: -120px;
+}
+main .container .second-container #box29 {
+  right: -125px;
+}
+main .container .second-container #box28 {
+  right: -90px;
+}
+main .container .second-container #box27 {
+  right: -92px;
+}
+main .container .second-container #box26 {
+  right: -55px;
+}
+main .container .second-container #box25 {
+  right: -56px;
+}
+main .container .second-container #box24 {
+  right: -15px;
+}
+main .container .second-container #box23 {
+  right: -20px;
+}
+main .container .second-container #box22 {
+  right: -25px;
+}
+main .container .second-container .second-elements {
+  width: 4%;
+  height: 90%;
+  background-color: black;
+  box-shadow: 0px 7px 1px rgba(128, 128, 128, 0.4);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+main .container .second-container .second-elements:active {
+  top: 7px;
+}
+main .container .first-elements {
+  width: 4.76%;
+  height: 100%;
+  border: 1px solid gray;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  box-shadow: 0px 7px 1px rgba(128, 128, 128, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  background-color: white;
+  bottom: 2px;
+}
+main .container .first-elements span {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+main .container .first-elements:active {
+  background-color: rgba(128, 128, 128, 0.4);
+  top: 7px;
+}/*# sourceMappingURL=piano.css.map */
