@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin size($width,$height){
+  width: $width;
+  height: $height;
+}
+
+@mixin center($align,$justify,$direction){
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+body{
+  @include size(100%,100vh);
+  @include center(center,center ,row);
+  font-family: monospace
+}
+
+main{
+  @include center(center,center ,row);
+  @include size(100%,100%);
+  background-color:rgb(155, 245, 245);
+
+  .container{
+    @include size(80%,350px);
+    // border: 2px solid black;
+    @include center(center,center,row);
+    position: relative;
+    // gap: 1px;
+
+    .second-container{
+    @include size(100%,55% );
+    position:absolute;
+    top: 0px;
+    @include center(flex-start , flex-start,row );
+    gap: 20px;
+
+
+    // Element selection: 
+    #box36{
+      right:-180px;
+    }
+    #box35{
+      right:-185px;
+    }
+    #box34{
+      right:-190px;
+    }
+    #box33{
+      right: -152px;
+    }
+    #box32{
+      right:-157px;
+    }
+    #box31{
+      right:-115px;
+    }
+    #box30{
+      right:-120px;
+    }
+    #box29{
+      right: -125px;
+    }
+    #box28{
+      right:-90px;
+    }
+    #box27{
+      right:-92px;
+    }
+    #box26{
+      right:-55px;
+    }
+    #box25{
+      right:-56px;
+    }
+    #box24{
+      right: -15px;
+    }
+    #box23{
+      right:-20px;
+    }
+    #box22{
+      right:-25px;
+    }
+
+      .second-elements{
+        @include size(4%,90%);
+        background-color: black;
+        box-shadow: 0px 7px 1px rgba(128, 128, 128,0.4);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        position: relative;
+        z-index: 1;
+      }
+        .second-elements:active{
+          top: 7px;
+        }
+    }
+
+    .first-elements{
+      @include size(4.76%,100% );
+      border: 1px solid gray;
+      @include center(flex-end,center ,row );
+      box-shadow: 0px 7px 1px rgba(128, 128, 128,0.4);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      position: relative;
+      background-color: white;
+      bottom: 2px;
+      span{
+        margin-bottom: 25px;
+        font-size: 22px;
+      }
+    }
+    .first-elements:active{
+      background-color: rgba(128, 128, 128,0.4);
+      top: 7px;
+    }
+  }
+}
